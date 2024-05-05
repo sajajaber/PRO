@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(205, 173, 68);
+    height: 50px; 
+ 
+  }
+    
+  .navbar a {
+    color: white;
+    background-color:rgb(205, 173, 68);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+  .navbar a:hover{
+    color: black;
+  }
+ 
+  .navbar a:hover::after {
+    background-color:black;
+  }
+  *{
+    background-color: rgb(131, 156, 153);
+  }
